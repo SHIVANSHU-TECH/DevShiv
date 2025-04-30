@@ -29,26 +29,26 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Sure Success Classes",
-      description: "a coaching center for a launchpad for students to dream big, work hard, and achieve their full potential.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+      description: "A coaching center for a launchpad for students to dream big, work hard, and achieve their full potential.",
+      tech: ["React", "Node.js", "Firebase", "Shadcn"],
       highlight: "Increased client's sales by 45% in the first quarter",
       color: "from-blue-500 to-indigo-600",
       icon: <Monitor size={64} className="text-white opacity-75" />,
       details: "This e-commerce solution included customer account management, product categorization, wishlist functionality, secure payment processing, and a robust admin dashboard for inventory and order management."
     },
     {
-      title: "Medical Dashboard",
-      description: "Comprehensive analytics dashboard for healthcare providers with patient data visualization",
-      tech: ["Vue.js", "Express", "PostgreSQL", "D3.js"],
+      title: "all ipu community",
+      description: "Connecting 20k+ students across IPU. Be a part of the largest student community today!",
+      tech: ["React.js", "Firebase", "shadcn"],
       highlight: "Reduced data processing time by 60% for medical staff",
       color: "from-green-500 to-emerald-600",
       icon: <Disc size={64} className="text-white opacity-75" />,
       details: "The dashboard featured real-time patient monitoring, customizable reporting tools, HIPAA-compliant data storage, and interactive visualizations for treatment outcomes and resource allocation."
     },
     {
-      title: "Real Estate Listing App",
-      description: "Property listing app with virtual tours and appointment scheduling",
-      tech: ["React Native", "Firebase", "Three.js", "Google Maps API"],
+      title: "Gym Website",
+      description: "A gym website for Helping you in the doing workout in home ",
+      tech: ["React Js", "Firebase","Tailwind", "Gym Api"],
       highlight: "Featured in Product Hunt's top 10 apps of the month",
       color: "from-purple-500 to-fuchsia-600",
       icon: <Zap size={64} className="text-white opacity-75" />,
@@ -221,16 +221,16 @@ export default function Portfolio() {
           <div className="flex items-center justify-center h-full text-white font-bold">BACK</div>
         </div>
         <div className="absolute w-full h-full bg-green-500 opacity-70 rounded-md transform" style={{ transform: 'translateY(-4rem) rotateX(90deg)' }}>
-          <div className="flex items-center justify-center h-full text-white font-bold">TOP</div>
+          <div className="flex items-center justify-center h-full text-white font-bold">DevOps</div>
         </div>
         <div className="absolute w-full h-full bg-yellow-500 opacity-70 rounded-md transform" style={{ transform: 'translateY(4rem) rotateX(-90deg)' }}>
-          <div className="flex items-center justify-center h-full text-white font-bold">BOTTOM</div>
+          <div className="flex items-center justify-center h-full text-white font-bold">Automation</div>
         </div>
         <div className="absolute w-full h-full bg-red-500 opacity-70 rounded-md transform" style={{ transform: 'translateX(4rem) rotateY(90deg)' }}>
-          <div className="flex items-center justify-center h-full text-white font-bold">RIGHT</div>
+          <div className="flex items-center justify-center h-full text-white font-bold">AI</div>
         </div>
         <div className="absolute w-full h-full bg-pink-500 opacity-70 rounded-md transform" style={{ transform: 'translateX(-4rem) rotateY(-90deg)' }}>
-          <div className="flex items-center justify-center h-full text-white font-bold">LEFT</div>
+          <div className="flex items-center justify-center h-full text-white font-bold">DB</div>
         </div>
       </div>
     );
@@ -477,19 +477,19 @@ export default function Portfolio() {
           </div>
           
           {/* Tech icons */}
-          <div className="mt-16 flex justify-center md:justify-start gap-6 opacity-60 animate-slide-in-bottom" style={{ animationDelay: '0.5s' }}>
-            {["React", "Node.js", "MongoDB", "Three.js", "AWS"].map((tech, index) => (
-              <div 
-                key={index} 
-                className="flex flex-col items-center group"
-              >
-                <div className="w-16 h-16 rounded-lg bg-gray-800 flex items-center justify-center mb-2 group-hover:bg-gray-700 transition">
-                  <span className="text-xl font-mono text-blue-400">{tech.charAt(0)}</span>
-                </div>
-                <span className="text-xs text-gray-400 group-hover:text-white transition">{tech}</span>
+        <div className="mt-8 md:mt-16 flex flex-wrap justify-center md:justify-start gap-3 md:gap-6 opacity-60 animate-slide-in-bottom" style={{ animationDelay: '0.5s' }}>
+          {["React", "Node.js", "MongoDB", "Three.js", "AWS"].map((tech, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center group"
+            >
+              <div className="w-12 h-12 md:w-16 md:h-16 rounded-lg bg-gray-800 flex items-center justify-center mb-1 md:mb-2 group-hover:bg-gray-700 transition">
+                <span className="text-lg md:text-xl font-mono text-blue-400">{tech.charAt(0)}</span>
               </div>
-            ))}
-          </div>
+              <span className="text-xs text-gray-400 group-hover:text-white transition">{tech}</span>
+            </div>
+          ))}
+        </div>
         </div>
         
         <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
@@ -517,8 +517,8 @@ export default function Portfolio() {
               whileHover={{ y: -10 }}
               className="bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700 hover:shadow-xl hover:shadow-blue-900/30 transition-all duration-300 group cursor-pointer"
             >
-              <a href={project.title === "E-Commerce Platform" ? "YOUR_ECOMMERCE_LINK" : 
-                        project.title === "Real Estate Listing App" ? "YOUR_REALESTATE_LINK" : "#"}
+              <a href={project.title === "Sure Success Classes" ? "http://sure-success.netlify.app/" : 
+                        project.title === "Gym Website" ? "https://flexigym.netlify.app/" : "https://allipucommunity.vercel.app/"}
                 target="_blank" rel="noopener noreferrer">
                 <div className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity"></div>
@@ -740,155 +740,155 @@ export default function Portfolio() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 px-4 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/grid-pattern.svg')]"></div>
+      <section id="contact" className="py-12 md:py-20 px-4 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('/grid-pattern.svg')]"></div>
+        </div>
+        
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-8 md:mb-16">
+            <h2 className="text-2xl md:text-5xl font-bold mb-4">
+              Ready to <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Start Your Project?</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg">
+              Fill out the form and I'll get back to you within 24 hours to discuss how we can bring your vision to life.
+            </p>
           </div>
           
-          <div className="container mx-auto relative z-10">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">
-                Ready to <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Start Your Project?</span>
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-                Fill out the form and I'll get back to you within 24 hours to discuss how we can bring your vision to life.
-              </p>
-            </div>
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-5 md:p-8 shadow-xl w-full"
+            >
+              <h3 className="text-xl md:text-2xl font-bold mb-6">Send Me a Message</h3>
+              
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
+                  <input 
+                    type="text" 
+                    name="name"
+                    value={formData.name}
+                    onChange={handleFormChange}
+                    className="w-full px-4 py-2 md:px-5 md:py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:border-blue-500 transition placeholder-gray-500"
+                    placeholder="John Doe"
+                  />
+                  {formErrors.name && <p className="text-red-400 text-sm mt-1">{formErrors.name}</p>}
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                  <input 
+                    type="email" 
+                    name="email"
+                    value={formData.email}
+                    onChange={handleFormChange}
+                    className="w-full px-4 py-2 md:px-5 md:py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:border-blue-500 transition placeholder-gray-500"
+                    placeholder="your@email.com"
+                  />
+                  {formErrors.email && <p className="text-red-400 text-sm mt-1">{formErrors.email}</p>}
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-400 mb-2">Project Details</label>
+                  <textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleFormChange}
+                    className="w-full px-4 py-2 md:px-5 md:py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:border-blue-500 transition h-32 md:h-40 placeholder-gray-500"
+                    placeholder="Tell me about your project, timeline, and budget..."
+                  ></textarea>
+                  {formErrors.message && <p className="text-red-400 text-sm mt-1">{formErrors.message}</p>}
+                </div>
+                
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="submit"
+                  className="w-full py-3 md:py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-bold hover:from-blue-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-blue-500/30"
+                >
+                  Send Message
+                </motion.button>
+              </form>
+            </motion.div>
             
-            <div className="grid lg:grid-cols-2 gap-10">
+            <div className="space-y-6 md:space-y-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 shadow-xl"
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-5 md:p-8 shadow-xl h-full"
               >
-                <h3 className="text-2xl font-bold mb-6">Send Me a Message</h3>
+                <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Contact Information</h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
-                    <input 
-                      type="text" 
-                      name="name"
-                      value={formData.name}
-                      onChange={handleFormChange}
-                      className="w-full px-5 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:border-blue-500 transition placeholder-gray-500"
-                      placeholder="John Doe"
-                    />
-                    {formErrors.name && <p className="text-red-400 text-sm mt-1">{formErrors.name}</p>}
+                <div className="space-y-4 md:space-y-6">
+                  <div className="flex items-start gap-3 md:gap-5">
+                    <div className="p-2 md:p-3 bg-blue-500/10 rounded-lg">
+                      <Mail className="text-blue-400" size={20} />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-base md:text-lg mb-1">Email</h4>
+                      <a href="mailto:shivanshushukla2022@gmail.com" className="text-gray-300 text-sm md:text-base hover:text-blue-400 transition break-all">
+                        shivanshushukla2022@gmail.com
+                      </a>
+                    </div>
                   </div>
                   
-                  <div>
-                    <label className="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
-                    <input 
-                      type="email" 
-                      name="email"
-                      value={formData.email}
-                      onChange={handleFormChange}
-                      className="w-full px-5 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:border-blue-500 transition placeholder-gray-500"
-                      placeholder="your@email.com"
-                    />
-                    {formErrors.email && <p className="text-red-400 text-sm mt-1">{formErrors.email}</p>}
+                  <div className="flex items-start gap-3 md:gap-5">
+                    <div className="p-2 md:p-3 bg-blue-500/10 rounded-lg">
+                      <Globe className="text-blue-400" size={20} />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-base md:text-lg mb-1">Availability</h4>
+                      <p className="text-gray-300 text-sm md:text-base">
+                        Currently accepting new projects. Response time: within 24 hours
+                      </p>
+                    </div>
                   </div>
                   
-                  <div>
-                    <label className="block text-sm font-medium text-gray-400 mb-2">Project Details</label>
-                    <textarea 
-                      name="message"
-                      value={formData.message}
-                      onChange={handleFormChange}
-                      className="w-full px-5 py-3 bg-gray-700 border border-gray-600 rounded-xl focus:outline-none focus:border-blue-500 transition h-40 placeholder-gray-500"
-                      placeholder="Tell me about your project, timeline, and budget..."
-                    ></textarea>
-                    {formErrors.message && <p className="text-red-400 text-sm mt-1">{formErrors.message}</p>}
+                  <div className="pt-4 md:pt-6 mt-4 md:mt-6 border-t border-gray-700">
+                    <h4 className="font-bold text-base md:text-lg mb-4 md:mb-6">Connect With Me</h4>
+                    <div className="flex gap-3 md:gap-4">
+                      {[
+                        { icon: <Github size={20} />, url: "#", color: "hover:bg-gray-700" },
+                        { icon: <Linkedin size={20} />, url: "#", color: "hover:bg-blue-700" },
+                        { icon: <Mail size={20} />, url: "#", color: "hover:bg-red-700" },
+                        { icon: <Globe size={20} />, url: "#", color: "hover:bg-green-700" },
+                      ].map((social, index) => (
+                        <motion.a
+                          key={index}
+                          whileHover={{ y: -3 }}
+                          href={social.url}
+                          className={`w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-800 flex items-center justify-center transition ${social.color}`}
+                        >
+                          {social.icon}
+                        </motion.a>
+                      ))}
+                    </div>
                   </div>
-                  
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    type="submit"
-                    className="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl font-bold hover:from-blue-500 hover:to-purple-500 transition-all shadow-lg hover:shadow-blue-500/30"
-                  >
-                    Send Message
-                  </motion.button>
-                </form>
+                </div>
               </motion.div>
               
-              <div className="space-y-8">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 shadow-xl h-full"
-                >
-                  <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                  
-                  <div className="space-y-6">
-                    <div className="flex items-start gap-5">
-                      <div className="p-3 bg-blue-500/10 rounded-lg">
-                        <Mail className="text-blue-400" size={22} />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-lg mb-1">Email</h4>
-                        <a href="mailto:shivanshushukla2022@gmail.com" className="text-gray-300 hover:text-blue-400 transition">
-                          shivanshushukla2022@gmail.com
-                        </a>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-5">
-                      <div className="p-3 bg-blue-500/10 rounded-lg">
-                        <Globe className="text-blue-400" size={22} />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-lg mb-1">Availability</h4>
-                        <p className="text-gray-300">
-                          Currently accepting new projects. Response time: within 24 hours
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="pt-6 mt-6 border-t border-gray-700">
-                      <h4 className="font-bold text-lg mb-6">Connect With Me</h4>
-                      <div className="flex gap-4">
-                        {[
-                          { icon: <Github size={24} />, url: "#", color: "hover:bg-gray-700" },
-                          { icon: <Linkedin size={24} />, url: "#", color: "hover:bg-blue-700" },
-                          { icon: <Mail size={24} />, url: "#", color: "hover:bg-red-700" },
-                          { icon: <Globe size={24} />, url: "#", color: "hover:bg-green-700" },
-                        ].map((social, index) => (
-                          <motion.a
-                            key={index}
-                            whileHover={{ y: -3 }}
-                            href={social.url}
-                            className={`w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center transition ${social.color}`}
-                          >
-                            {social.icon}
-                          </motion.a>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-                
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-blue-500/30 rounded-2xl p-6 text-center"
-                >
-                  <div className="flex items-center justify-center gap-3 mb-3">
-                    <Clock className="text-blue-400" size={20} />
-                    <h4 className="font-bold">Quick Response Guarantee</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">
-                    I understand time is money in business. That's why I guarantee a response within 24 hours to discuss your project needs.
-                  </p>
-                </motion.div>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-blue-500/30 rounded-2xl p-4 md:p-6 text-center"
+              >
+                <div className="flex items-center justify-center gap-2 md:gap-3 mb-2 md:mb-3">
+                  <Clock className="text-blue-400" size={18} />
+                  <h4 className="font-bold text-sm md:text-base">Quick Response Guarantee</h4>
+                </div>
+                <p className="text-gray-300 text-xs md:text-sm">
+                  I understand time is money in business. That's why I guarantee a response within 24 hours to discuss your project needs.
+                </p>
+              </motion.div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
        {/* Footer */}
     <footer className="py-12 px-4 border-t border-gray-800 bg-gray-900/50 backdrop-blur-sm">
