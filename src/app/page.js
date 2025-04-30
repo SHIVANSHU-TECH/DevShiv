@@ -871,20 +871,6 @@ export default function Portfolio() {
                 </div>
               </motion.div>
               
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-blue-500/30 rounded-2xl p-4 md:p-6 text-center"
-              >
-                <div className="flex items-center justify-center gap-2 md:gap-3 mb-2 md:mb-3">
-                  <Clock className="text-blue-400" size={18} />
-                  <h4 className="font-bold text-sm md:text-base">Quick Response Guarantee</h4>
-                </div>
-                <p className="text-gray-300 text-xs md:text-sm">
-                  I understand time is money in business. That's why I guarantee a response within 24 hours to discuss your project needs.
-                </p>
-              </motion.div>
             </div>
           </div>
         </div>
