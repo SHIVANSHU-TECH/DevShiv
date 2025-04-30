@@ -62,7 +62,7 @@ export default function Portfolio() {
       name: "Ambrish Shukla",
       position: "Founder, Sure Success Classes",
       text: "Working with this developer was the best decision for our business.",
-      image: "/Ambrish.jpeg"
+      image: "/Ambrish.jpg"
     },
     {
       name: "Satyam Srivastava",
@@ -74,7 +74,7 @@ export default function Portfolio() {
       name: "Vishwajit",
       position: "Founder, Ani69",
       text: "His technical skills are exceptional, and he has a deep understanding of web development technologies and frameworks. He was able to incorporate the latest design trends and ensure that the website was fully responsive and accessible across different platforms.",
-      image: "/vishwa.jpeg"
+      image: "/vishwa.jpg"
     }
   ];
 
