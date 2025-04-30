@@ -37,7 +37,7 @@ export default function Portfolio() {
       details: "This e-commerce solution included customer account management, product categorization, wishlist functionality, secure payment processing, and a robust admin dashboard for inventory and order management."
     },
     {
-      title: "all ipu community",
+      title: "All Ipu Community",
       description: "Connecting 20k+ students across IPU. Be a part of the largest student community today!",
       tech: ["React.js", "Firebase", "shadcn"],
       highlight: "Reduced data processing time by 60% for medical staff",
@@ -59,22 +59,22 @@ export default function Portfolio() {
   // Testimonials data
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      position: "CEO, TechStart Inc.",
-      text: "Working with this developer was the best decision for our business. The e-commerce solution delivered exceeded our expectations and directly contributed to our revenue growth.",
-      image: "/api/placeholder/100/100"
+      name: "Ambrish Shukla",
+      position: "Founder, Sure Success Classes",
+      text: "Working with this developer was the best decision for our business.",
+      image: "/Ambrish.jpeg"
     },
     {
-      name: "Dr. Michael Chen",
-      position: "Medical Director, HealthPlus",
-      text: "The healthcare dashboard created for our clinic has revolutionized how we analyze patient data. The attention to detail and understanding of our needs was impressive.",
-      image: "/api/placeholder/100/100"
+      name: "Satyam Srivastava",
+      position: "Cto, CollegexConnect",
+      text: "I engaged him for company for web design services. They delivered outstanding results with creativity, professionalism, and timely communication. The project was completed on schedule and exceeded my expectations.",
+      image: "/Satyam.jpeg"
     },
     {
-      name: "Amanda Parker",
-      position: "Founder, PropertyMatch",
-      text: "Our real estate app has received outstanding feedback from users. The interactive features and clean interface have set us apart from competitors in our market.",
-      image: "/api/placeholder/100/100"
+      name: "Vishwajit",
+      position: "Founder, Ani69",
+      text: "His technical skills are exceptional, and he has a deep understanding of web development technologies and frameworks. He was able to incorporate the latest design trends and ensure that the website was fully responsive and accessible across different platforms.",
+      image: "/vishwa.jpeg"
     }
   ];
 
