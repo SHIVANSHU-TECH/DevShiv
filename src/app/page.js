@@ -4,7 +4,7 @@ import { Club, ChevronDown, Code, Monitor, Users, Award, ArrowRight, Github, Lin
 import * as THREE from 'three';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { motion } from 'framer-motion'
-import { db } from '../firebase';
+import { db } from '../lib/firebase';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('hero');
