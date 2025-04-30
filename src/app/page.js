@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
-import { Club, ChevronDown, Code, Monitor, Users, Award, ArrowRight, Github, Linkedin, Mail, Globe, Zap, Clock, Disc, Sparkles, Check, X, ArrowUpRight } from 'lucide-react';
+import { Club, ChevronDown, Code, Monitor, Users, Award, ArrowRight, Instagram, Linkedin, Mail, Globe, Zap, Clock, Disc, Sparkles, Check, X, ArrowUpRight } from 'lucide-react';
 import * as THREE from 'three';
 import { motion } from 'framer-motion'
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
@@ -874,9 +874,9 @@ export default function Portfolio() {
                     <h4 className="font-bold text-base md:text-lg mb-4 md:mb-6">Connect With Me</h4>
                     <div className="flex gap-3 md:gap-4">
                       {[
-                        { icon: <Github size={20} />, url: "#", color: "hover:bg-gray-700" },
+                        { icon: <Instagram size={20} />, url: "https://www.instagram.com/youmedevelop/", color: "hover:bg-gray-700" },
                         { icon: <Linkedin size={20} />, url: "#", color: "hover:bg-blue-700" },
-                        { icon: <Mail size={20} />, url: "#", color: "hover:bg-red-700" },
+                        { icon: <Mail size={20} />, url: "mailto:shivanshushukla2022@gmail.com", color: "hover:bg-red-700" },
                         { icon: <Globe size={20} />, url: "#", color: "hover:bg-green-700" },
                       ].map((social, index) => (
                         <motion.a
@@ -929,9 +929,9 @@ export default function Portfolio() {
             
             <div className="flex gap-5">
               {[
-                { icon: <Github size={20} />, url: "#" },
+                { icon: <Instagram size={20} />, url: "https://www.instagram.com/youmedevelop/" },
                 { icon: <Linkedin size={20} />, url: "#" },
-                { icon: <Mail size={20} />, url: "#" },
+                { icon: <Mail size={20} />, url: "mailto:shivanshushukla2022@gmail.com" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -947,7 +947,7 @@ export default function Portfolio() {
         </div>
         
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} All rights reserved. Built with ❤️ using Next.js, Three.js & Framer Motion</p>
+          <p>© {new Date().getFullYear()} All rights reserved. Built by Shiv </p>
         </div>
       </div>
     </footer>
