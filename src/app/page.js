@@ -875,9 +875,9 @@ export default function Portfolio() {
                     <div className="flex gap-3 md:gap-4">
                       {[
                         { icon: <Instagram size={20} />, url: "https://www.instagram.com/youmedevelop/", color: "hover:bg-gray-700" },
-                        { icon: <Linkedin size={20} />, url: "#", color: "hover:bg-blue-700" },
+                        { icon: <Linkedin size={20} />, url: "https://www.linkedin.com/in/shivanshushukla07/", color: "hover:bg-blue-700" },
                         { icon: <Mail size={20} />, url: "mailto:shivanshushukla2022@gmail.com", color: "hover:bg-red-700" },
-                        { icon: <Globe size={20} />, url: "#", color: "hover:bg-green-700" },
+                        { icon: <Globe size={20} />, url: "/", color: "hover:bg-green-700" },
                       ].map((social, index) => (
                         <motion.a
                           key={index}
@@ -929,8 +929,8 @@ export default function Portfolio() {
             
             <div className="flex gap-5">
               {[
-                { icon: <Instagram size={20} />, url: "https://www.instagram.com/youmedevelop/" },
-                { icon: <Linkedin size={20} />, url: "#" },
+                { icon: <Instagram size={20} />, url: "https://www.instagram.com/shiv_anshu_shukla/" },
+                { icon: <Linkedin size={20} />, url: "https://www.linkedin.com/in/shivanshushukla07/" },
                 { icon: <Mail size={20} />, url: "mailto:shivanshushukla2022@gmail.com" },
               ].map((social, index) => (
                 <motion.a
