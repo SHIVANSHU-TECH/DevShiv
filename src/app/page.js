@@ -69,13 +69,13 @@ export default function Portfolio() {
     {
       name: "Satyam Srivastava",
       position: "Cto, CollegexConnect",
-      text: "I engaged him for company for web design services. They delivered outstanding results with creativity, professionalism, and timely communication. The project was completed on schedule and exceeded my expectations.",
+      text: "I engaged him for company for web design services. They delivered outstanding results with creativity, professionalism, and timely communication.",
       image: "/Satyam.jpeg"
     },
     {
       name: "Vishwajit",
       position: "Founder, Ani69",
-      text: "His technical skills are exceptional, and he has a deep understanding of web development technologies and frameworks. He was able to incorporate the latest design trends and ensure that the website was fully responsive and accessible across different platforms.",
+      text: "His technical skills are exceptional, and he has a deep understanding of web development technologies and frameworks.",
       image: "/vishwa.jpg"
     }
   ];
